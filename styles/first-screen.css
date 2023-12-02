@@ -3,7 +3,7 @@
 .first-screen {
   width: 1440px;
   height: 795px;
-  background: url("/public/assets/img/fs-background.png");
+  background: url("/assets/img/fs-background.png");
   position: relative;
 }
 

@@ -99,7 +99,7 @@
 .product-info {
   display: flex;
   align-items: center;
-  background-image: url("/public/assets/icons/check.svg");
+  background-image: url("/assets/icons/check.svg");
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 15px;
