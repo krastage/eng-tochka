@@ -1,0 +1,149 @@
+@import "variables.css";
+
+.first-screen {
+  width: 1440px;
+  height: 795px;
+  background: url("/public/assets/img/fs-background.png");
+  position: relative;
+}
+
+/*containers*/
+
+.first-screen-container {
+  width: 629px;
+}
+
+.first-screen__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+  margin-left: 168px;
+}
+
+.fs-title {
+  font-family: Museo Sans Cyrl, serif;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1.76px;
+  color: var(--fs-primary-color)
+}
+
+.fs-date {
+  font-family: Helvetica Neue, serif;
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
+}
+
+/*logo*/
+
+.first-screen__logo,
+.first-screen__heading {
+  margin-bottom: 24px;
+}
+
+.first-screen__logo {
+  display: flex;
+}
+
+/*title*/
+
+.first-screen__heading {
+  font-size: var(--fs-heading-size);
+}
+
+.first-screen__description {
+  font-size: var(--fs-description-size);
+  max-width: 501px;
+  margin-bottom: 53px;
+}
+
+.first-screen__description span {
+  font-weight: bold;
+}
+
+/*date*/
+
+.first-screen__date-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 53px;
+}
+
+.first-screen__date-wrapper {
+  display: flex;
+  gap: 13px;
+  background-color: var(--fs-date-wrapper-color);
+}
+
+.first-screen__day {
+  font-size: var(--fs-day-size);
+  padding: 5px 0 7px 15px
+}
+
+.first-screen__month-info {
+  padding: 10px 42px 16px 0;
+}
+
+.first-screen__month {
+  font-size: var(--fs-main-size);
+}
+
+.first-screen__start-info {
+  font-family: Museo Sans Cyrl, serif;
+  font-size: var(--fs-start-info-size);
+  color: var(--fs-start-info-color);
+}
+
+/*buttons*/
+
+.first-screen__buttons {
+  display: flex;
+  gap: 16px;
+  font-size: var(--fs-main-size);
+}
+
+.first-screen__info-button {
+  background-color: var(--red-button-color);
+  padding: 23px 64px 26px 66px;
+}
+
+.info-button__text {
+  color: #fff;
+}
+
+.first-screen__consulting-button {
+  padding: 23px 29px;
+  border: 1px solid var(--secondary-button-color);
+}
+
+.consulting-button__text {
+  color: var(--secondary-button-color);
+}
+
+/*images*/
+
+.first-screen__images {
+  pointer-events: none;
+}
+
+.first-screen__person {
+  width: 528px;
+  height: 687px;
+  top: 108px;
+  right: 101px;
+  z-index: 1;
+}
+
+.first-screen__cafe-left {
+  top: 10px;
+  left: 0;
+  z-index: 0;
+}
+
+.first-screen__cafe-right {
+  top: 0;
+  right: 0;
+  z-index: 0;
+}

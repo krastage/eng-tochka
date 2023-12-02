@@ -1,0 +1,45 @@
+# Ignore temporary files and directories
+node_modules/
+*.log
+*.tmp
+*.temp
+
+# Ignore generated files
+/dist/
+/build/
+/out/
+/.next/
+/.nuxt/
+/.storybook/
+
+# Ignore local settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore configuration files
+/.eslintrc.js
+/.prettierrc.js
+
+# Ignore editor settings
+.vscode/
+.idea/
+
+# Ignore dependency files
+yarn.lock
+package-lock.json
+
+# Ignore generated images and fonts
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+/*.eot
+/*.ttf
+/*.woff
+/*.woff2
+
+# Ignore build artifacts
+.DS_Store
+Thumbs.db

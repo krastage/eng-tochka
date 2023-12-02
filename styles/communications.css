@@ -1,0 +1,73 @@
+@import "variables.css";
+
+.communications {
+  padding: 49px 444px 60px;
+  background-color: var(--communications-bg-color);
+}
+
+.communications-container,
+.communications-form,
+.communications-form__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.communications-container {
+  width: 553px;
+}
+
+.communications-header {
+  font-size: var(--communications-heading-size);
+  color: var(--communications-font-color);
+  margin-bottom: 23px;
+}
+
+.communications-description {
+  font-family: Montserrat, serif;
+  color: var(--communications-font-color);
+  margin-bottom: 34px;
+  width: 324px;
+  text-align: center;
+}
+
+.communications-form {
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.communications-form__input {
+  padding: 28px 50px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: var(--communications-input-color);
+  font-family: Montserrat, serif;
+  font-size: var(--communications-input-size);
+}
+
+.communications-form__input::placeholder {
+  text-align: center;
+}
+
+.communications-form__input:focus::placeholder {
+  color: transparent;
+}
+
+.communications-form__button {
+  padding: 29px 166px;
+  background-color: var(--red-button-color);
+  font-family: Montserrat, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 23px;
+  color: #fff;
+  font-size: var(--communications-button-size);
+  width: 100%;
+}
+
+.communications-privacy {
+  font-size: var(--communications-privacy-size);
+  text-align: center;
+  font-family: Montserrat, serif;
+}

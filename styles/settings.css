@@ -1,0 +1,36 @@
+@import "variables.css";
+@import "fonts.css";
+
+* {
+  font-family: Helvetica Neue, serif;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-small {
+  border-radius: 5px;
+}
+
+.rounded-medium {
+  border-radius: 10px;
+}
+
+.rounded-large {
+  border-radius: 20px;
+}
+
+.rounded-extra-large {
+  border-radius: 70px;
+}
+
+.absolute-object {
+  position: absolute;
+}
