@@ -3,6 +3,23 @@
 .communications {
   padding: 49px 444px 60px;
   background-color: var(--communications-bg-color);
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications {
+    padding: 32px 26px 25px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications {
+    padding: 22px 260px 29px;
+  }
 }
 
 .communications-container,
@@ -18,10 +35,35 @@
   width: 553px;
 }
 
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications-container {
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications-container {
+    width: 415px;
+  }
+}
+
 .communications-header {
   font-size: var(--communications-heading-size);
   color: var(--communications-font-color);
   margin-bottom: 23px;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications-header {
+    font-size: var(--fs-day-size-tablet);
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications-header {
+    font-size: var(--fs-day-size-tablet);
+    margin-bottom: 11px;
+  }
 }
 
 .communications-description {
@@ -32,9 +74,40 @@
   text-align: center;
 }
 
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications-description {
+    font-size: var(--fs-start-info-size);
+    margin-bottom: 17px;
+    width: 226px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications-description {
+    font-size: var(--fs-start-info-size);
+    margin-bottom: 16px;
+    width: 324px;
+  }
+}
+
 .communications-form {
   gap: 12px;
   margin-bottom: 26px;
+  width: 553px;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications-form {
+    margin-bottom: 16px;
+    width: 268px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications-form {
+    margin-bottom: 16px;
+    width: 415px;
+  }
 }
 
 .communications-form__input {
@@ -44,6 +117,22 @@
   color: var(--communications-input-color);
   font-family: Montserrat, serif;
   font-size: var(--communications-input-size);
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications-form__input {
+    padding: 13px 23px;
+    font-size: var(--main-list-size);
+    width: 268px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications-form__input {
+    padding: 13px 23px;
+    font-size: var(--main-list-size);
+    width: 268px;
+  }
 }
 
 .communications-form__input::placeholder {
@@ -66,8 +155,45 @@
   width: 100%;
 }
 
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications-form__button {
+    padding: 14px 68px;
+    width: 268px;
+    font-size: var(--communications-privacy-size);
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications-form__button {
+    padding: 10px 82px;
+    width: 268px;
+    font-size: var(--main-button-size);
+  }
+}
+
 .communications-privacy {
   font-size: var(--communications-privacy-size);
   text-align: center;
   font-family: Montserrat, serif;
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .communications-privacy {
+    font-size: var(--main-desription-size-adaptive);
+    width: 225px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .communications-privacy {
+    font-size: var(--main-desription-size-adaptive);
+    width: 225px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
 }

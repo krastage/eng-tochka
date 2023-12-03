@@ -1,6 +1,7 @@
 :root {
   /*colors*/
   --fs-primary-color: #232323;
+  --fs-logo-color: #18193F;
   --fs-date-wrapper-color: rgba(66, 66, 66, 0.80);
   --fs-start-info-color: #D2E400;
 
@@ -26,17 +27,24 @@
 
   /*fonts*/
   --fs-heading-size: 44px;
+  --fs-heading-size-tablet: 33px;
   --fs-description-size: 35px;
   --fs-day-size: 40px;
+  --fs-day-size-tablet: 20px;
+  --fs-day-size-mobile: 14px;
   --fs-main-size: 18px;
   --fs-start-info-size: 12px;
 
   --main-heading-size: 37px;
   --main-product-heading-size: 26px;
   --main-product-price-size: 50px;
+  --main-product-price-size-adaptive: 64px;
+  --main-promo-info-size-adaptive: 26px;
   --main-old-price-size: 24px;
+  --main-old-price-size-adaptive: 18px;
   --main-list-size: 12px;
   --main-discount-size: 19px;
+  --main-desription-size-adaptive: 8px;
   --main-prepayment-heading-size: 22px;
   --main-prepayment-price-size: 32px;
   --main-button-size: 14px;
@@ -49,6 +57,9 @@
   --communications-button-size: 30px;
   --communications-privacy-size: 16px;
 
+  --footer-company-info-size-adaptive: 6px;
   --footer-main-size: 22px;
   --footer-company-info-size: 16px;
+
+
 }

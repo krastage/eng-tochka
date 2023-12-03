@@ -13,8 +13,8 @@ const scrollToConsult = () => {
 };
 
 // функция обработчик нажатия на кнопку отправить в форме
-const handleSubmit = (event) => {
+const onSubmit = (event) => {
   event.preventDefault();
 };
 
-submitButton.addEventListener('click', handleSubmit);
+submitButton.addEventListener('click', onSubmit);

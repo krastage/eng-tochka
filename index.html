@@ -2,13 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="styles/settings.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/first-screen.css">
     <link rel="stylesheet" href="styles/product.css">
     <link rel="stylesheet" href="styles/communications.css">
-    <script src="js/handleSubmit.js" defer></script>
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="js/index.js" defer></script>
     <title>Document</title>
   </head>
   <body>
@@ -18,12 +19,12 @@
       <section class="first-screen">
         <div class="first-screen__content first-screen-container">
 
-          <div class="first-screen__logo">
-            <img src="assets/icons/logo-fs.svg" alt="logo">
-            <img src="assets/icons/english.svg" alt="english">
+          <div class="first-screen-logo">
+            <img src="assets/icons/logo-fs.svg" alt="logo" class="first-screen-logo__img">
+            <p class="first-screen-logo__title">English</p>
           </div>
 
-          <h1 class="first-screen__heading fs-title">Вкладывайте незначительные деньги каждый день в копилку своих знаний.</h1>
+          <h1 class="first-screen__heading fs-title">Вкладывайте незначительные деньги каждый день в копилку <br>своих знаний.</h1>
 
           <p class="first-screen__description fs-title">Следующий курс для вас будет стоить всего <span>178 рублей в день</span></p>
 
@@ -46,10 +47,10 @@
           </div>
 
           <div class="first-screen__buttons">
-            <button class="first-screen__info-button rounded-small">
+            <button class="first-screen__info-button rounded-small" onclick="scrollToStudy()">
               <span class="info-button__text">Узнать подробнее</span>
             </button>
-            <button class="first-screen__consulting-button rounded-small">
+            <button class="first-screen__consulting-button rounded-small" onclick="scrollToConsult()">
               <span class="consulting-button__text">Бесплатная консультация</span>
             </button>
           </div>
@@ -70,7 +71,7 @@
 
       <main class="products">
 
-        <h2 class="products-header">Выберите свой вариант обучения </h2>
+        <h2 class="products-header" id="study">Выберите свой вариант обучения </h2>
 
         <div class="products-content">
           <ul class="products-list">
@@ -96,7 +97,7 @@
               <div class="product-prepayment">
                 <div class="product-prepayment__title">
                   <p class="product-prepayment__description">Предоплата</p>
-                  <p class="product-prepayment__price">900 ₽</p>
+                  <p class="product-prepayment__price">900 <span class="rouble">&#8381;</span></p>
 
                 </div>
                 <div class="product-prepayment__buttons">
@@ -112,14 +113,14 @@
             </li>
             <li class="product rounded-medium">
 
-              <h4 class="product-header product-primary-text">Один курс</h4>
-              <p class="product-price product-primary-text">10 900 <span class="rouble">&#8381;</span></p>
+              <h4 class="product-header product-primary-text">Два курса</h4>
+              <p class="product-price product-primary-text">21 900 <span class="rouble">&#8381;</span></p>
               <div class="product-discount rounded-small absolute-object">
-                <p class="product-discount__title">-56%</p>
+                <p class="product-discount__title">-60%</p>
               </div>
-              <p class="product-old-price">24 900 <span class="rouble">&#8381;</span></p>
+              <p class="product-old-price">48 900 <span class="rouble">&#8381;</span></p>
               <ul class="product-info-list">
-                <li class="product-info product-primary-text"><p class="product-info__description">2 месяца обучения</p></li>
+                <li class="product-info product-primary-text"><p class="product-info__description">4 месяца обучения</p></li>
                 <li class="product-info"><p class="product-info__description">Грамматическая выжимка</p></li>
                 <li class="product-info"><p class="product-info__description">Разговорный тренажёр</p></li>
                 <li class="product-info"><p class="product-info__description">Слова с ассоциациями</p></li>
@@ -132,7 +133,7 @@
               <div class="product-prepayment">
                 <div class="product-prepayment__title">
                   <p class="product-prepayment__description">Предоплата</p>
-                  <p class="product-prepayment__price">900 ₽</p>
+                  <p class="product-prepayment__price">900 <span class="rouble">&#8381;</span></p>
 
                 </div>
                 <div class="product-prepayment__buttons">
@@ -148,14 +149,14 @@
             </li>
             <li class="product rounded-medium">
 
-              <h4 class="product-header product-primary-text">Один курс</h4>
-              <p class="product-price product-primary-text">10 900 <span class="rouble">&#8381;</span></p>
+              <h4 class="product-header product-primary-text">Три курса</h4>
+              <p class="product-price product-primary-text">28 900 <span class="rouble">&#8381;</span></p>
               <div class="product-discount rounded-small absolute-object">
-                <p class="product-discount__title">-56%</p>
+                <p class="product-discount__title">-61%</p>
               </div>
-              <p class="product-old-price">24 900 <span class="rouble">&#8381;</span></p>
+              <p class="product-old-price">74 900 <span class="rouble">&#8381;</span></p>
               <ul class="product-info-list">
-                <li class="product-info product-primary-text"><p class="product-info__description">2 месяца обучения</p></li>
+                <li class="product-info product-primary-text"><p class="product-info__description">6 месяцев обучения</p></li>
                 <li class="product-info"><p class="product-info__description">Грамматическая выжимка</p></li>
                 <li class="product-info"><p class="product-info__description">Разговорный тренажёр</p></li>
                 <li class="product-info"><p class="product-info__description">Слова с ассоциациями</p></li>
@@ -168,7 +169,7 @@
               <div class="product-prepayment">
                 <div class="product-prepayment__title">
                   <p class="product-prepayment__description">Предоплата</p>
-                  <p class="product-prepayment__price">900 ₽</p>
+                  <p class="product-prepayment__price">900 <span class="rouble">&#8381;</span></p>
 
                 </div>
                 <div class="product-prepayment__buttons">
@@ -184,14 +185,14 @@
             </li>
             <li class="product rounded-medium">
 
-              <h4 class="product-header product-primary-text">Один курс</h4>
-              <p class="product-price product-primary-text">10 900 <span class="rouble">&#8381;</span></p>
+              <h4 class="product-header product-primary-text">Пять курсов</h4>
+              <p class="product-price product-primary-text">44 900 <span class="rouble">&#8381;</span></p>
               <div class="product-discount rounded-small absolute-object">
-                <p class="product-discount__title">-56%</p>
+                <p class="product-discount__title">-65%</p>
               </div>
-              <p class="product-old-price">24 900 <span class="rouble">&#8381;</span></p>
+              <p class="product-old-price">124 900 <span class="rouble">&#8381;</span></p>
               <ul class="product-info-list">
-                <li class="product-info product-primary-text"><p class="product-info__description">2 месяца обучения</p></li>
+                <li class="product-info product-primary-text"><p class="product-info__description">10 месяцев обучения</p></li>
                 <li class="product-info"><p class="product-info__description">Грамматическая выжимка</p></li>
                 <li class="product-info"><p class="product-info__description">Разговорный тренажёр</p></li>
                 <li class="product-info"><p class="product-info__description">Слова с ассоциациями</p></li>
@@ -204,7 +205,7 @@
               <div class="product-prepayment">
                 <div class="product-prepayment__title">
                   <p class="product-prepayment__description">Предоплата</p>
-                  <p class="product-prepayment__price">900 ₽</p>
+                  <p class="product-prepayment__price">900 <span class="rouble">&#8381;</span></p>
 
                 </div>
                 <div class="product-prepayment__buttons">
@@ -222,42 +223,37 @@
 
         </div>
 
-        <section class="promo rounded-large">
-          <div class="promo-description absolute-object">
-            <p class="promo-description__title">подарок</p>
-            <p class="promo-description__text"><span>Спецкурс</span> "Английский для эмиграции" <br><span>Спецкурс</span> "Как преодолеть языковой барьер"</p>
-          </div>
-
-          <div class="promo-images">
-            <div class="promo-images__rectangle rounded-extra-large absolute-object"></div>
-            <img src="assets/img/book-left.png" alt="book-left" class="book-left absolute-object">
-            <img src="assets/img/book-right.png" alt="book-right" class="book-right absolute-object">
-            <img src="assets/img/+.png" alt="plus" class="plus absolute-object">
-            <img src="assets/img/ribbon.png" alt="ribbon" class="ribbon absolute-object">
-            <img src="assets/img/promo-cafe-top.png" alt="cafe-top" class="cafe-top absolute-object">
-            <img src="assets/img/promo-cafe-bottom.png" alt="cafe-bottom" class="cafe-bottom absolute-object">
-          </div>
-        </section>
+        <div class="promo">
+         <img src="/assets/img/promo.svg" alt="promo" class="promo-img">
+        </div>
 
       </main>
 
       <section class="communications">
         <div class="communications-container">
 
-          <h3 class="communications-header">Еще думаете?</h3>
+          <h3 class="communications-header" id="consult">Еще думаете?</h3>
           <p class="communications-description">Записывайтесь на бесплатный урок и попробуйте сами, это поможет принять решение</p>
 
-          <form onsubmit="handleSubmit()" class="communications-form communications-container">
+          <form onsubmit="onSubmit()" class="communications-form">
             <label>
-              <input type="text" placeholder="Введите ваше имя" class="communications-form__input rounded-medium communications-container">
+              <input type="text"
+                     placeholder="Введите ваше имя"
+                     class="communications-form__input rounded-medium communications-container">
             </label>
             <label>
-              <input type="text" placeholder="Введите ваш телефон" class="communications-form__input rounded-medium communications-container">
+              <input type="text"
+                     placeholder="Введите ваш телефон"
+                     class="communications-form__input rounded-medium communications-container">
             </label>
             <label>
-              <input type="text" placeholder="Введите ваш email" class="communications-form__input rounded-medium communications-container">
+              <input type="text"
+                     placeholder="Введите ваш email"
+                     class="communications-form__input rounded-medium communications-container">
             </label>
-            <button type="submit" id="submitButton" class="communications-form__button rounded-medium communications-container">записаться</button>
+            <button type="submit"
+                    id="submitButton"
+                    class="communications-form__button rounded-medium communications-container">записаться</button>
           </form>
 
           <p class="communications-privacy">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой конфиденциальности</p>
@@ -266,7 +262,24 @@
       </section>
 
       <footer class="footer">
-
+        <div class="footer-container">
+          
+          <div class="footer-logo">
+            <img src="/assets/icons/logo-footer.svg" alt="logo-footer" class="footer-logo__img">
+            <p class="footer-logo__title">English</p>
+          </div>
+          
+          <div class="footer-info">
+            <p class="footer-info__privacy">2015 - 2021 © English. Все права защищены. <br>Политика конфиденциальности <br> Соглашение об обработке персональных данных</p>
+            <p class="footer-info__address">ООО "Инглиш", юридический адрес: 000000, Санкт-Петербург, ул. Улица, д. 0/00 лит. 0, пом. 0 <br>ОГРН: 000000000000 | ИНН: 000000000 | КПП: 000000000</p>
+          </div>
+          
+          <div class="footer-links">
+            <img src="/assets/icons/vk.svg" alt="vk" class="footer-links__vk">
+            <img src="/assets/icons/tg.svg" alt="telegram" class="footer-links__tg">
+          </div>
+          
+        </div>
       </footer>
 
     </div>

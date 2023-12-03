@@ -6,6 +6,7 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: -0.72px;
+  overflow-x: hidden;
 }
 
 .content {
@@ -33,4 +34,8 @@
 
 .absolute-object {
   position: absolute;
+}
+
+.rouble {
+  font-family: Roboto, serif;
 }
