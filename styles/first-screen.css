@@ -9,7 +9,13 @@
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 424px) {
+  .first-screen {
+    height: 700px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
   .first-screen {
     height: 650px;
   }
@@ -27,17 +33,19 @@
   width: 629px;
 }
 
-@media (max-width: 767px) {
-  .first-screen__content {
-    width: 209px;
+@media (min-width: 320px) and (max-width: 767px) {
+  .first-screen-container {
+    width: 150px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  .first-screen__content {
+  .first-screen-container {
     width: 451px;
   }
 }
+
+/*content*/
 
 .first-screen__content {
   display: flex;
@@ -46,7 +54,13 @@
   margin-left: 168px;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 424px) {
+  .first-screen__content {
+    margin-left: 18px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
   .first-screen__content {
     margin-top: 10px;
     margin-left: 38px;
@@ -145,6 +159,12 @@
   .first-screen__heading {
     font-size: var(--main-old-price-size);
     width: 159px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 424px) {
+  .first-screen__heading {
+    font-size: var(--main-old-price-size);
   }
 }
 
@@ -302,44 +322,22 @@
   color: var(--secondary-button-color);
 }
 
-@media (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .first-screen__buttons {
     flex-direction: column;
     gap: 9px;
+    width: 250px;
   }
 
   .first-screen__info-button {
     font-size: var(--communications-privacy-size);
     padding: 7px 13px;
-    width: 240px;
     height: 52px;
   }
 
   .first-screen__consulting-button {
     font-size: var(--communications-privacy-size);
     padding: 7px 13px;
-    min-width: 240px;
-    height: 52px;
-  }
-}
-
-@media (min-width: 425px) and (max-width: 767px) {
-  .first-screen__buttons {
-    flex-direction: column;
-    gap: 9px;
-  }
-
-  .first-screen__info-button {
-    font-size: var(--communications-privacy-size);
-    padding: 7px 13px;
-    width: 350px;
-    height: 52px;
-  }
-
-  .first-screen__consulting-button {
-    font-size: var(--communications-privacy-size);
-    padding: 7px 13px;
-    min-width: 350px;
     height: 52px;
   }
 }
@@ -432,7 +430,16 @@
   z-index: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 424px) {
+  .first-screen__cafe-right {
+    top: 0;
+    right: -58%;
+    width: 463px;
+    transform: rotate(-26.428deg);
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
   .first-screen__cafe-right {
     top: 0;
     right: -38%;

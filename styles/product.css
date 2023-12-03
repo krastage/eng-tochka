@@ -9,7 +9,7 @@
   padding: 90px 168px 96px;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .products {
     width: 1105px;
     padding: 35px 25px 30px;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .products-header {
     font-size: var(--main-old-price-size);
     font-style: normal;
@@ -81,7 +81,7 @@
   margin-bottom: 92px;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .products-content {
     margin-bottom: 35px;
   }
@@ -99,7 +99,7 @@
   max-width: 1104px;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .products-list {
     flex-direction: column;
     gap: 20px;
@@ -123,9 +123,9 @@
   position: relative;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .product {
-    padding: 32px 36px 30px;
+    padding: 32px 17px 30px;
     width: 268px;
   }
 }
@@ -144,7 +144,7 @@
   text-align: center;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .product-header {
     font-size: var(--main-product-heading-size);
   }
@@ -163,7 +163,7 @@
   margin-bottom: 7px;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .product-price {
     font-size: var(--main-product-price-size-adaptive);
     line-height: 108%;
@@ -188,7 +188,7 @@
   justify-content: center;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .product-discount {
     top: 139px;
   }
@@ -351,7 +351,7 @@
   justify-content: center;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .prepayment-button {
     height: 66px;
     width: 100%;
@@ -440,9 +440,9 @@
   pointer-events: none;
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .promo {
-    width: 341px;
+    width: 301px;
     height: 112px;
   }
 }
