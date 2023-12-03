@@ -8,6 +8,10 @@
   letter-spacing: -0.72px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .content {
   display: flex;
   flex-direction: column;
